@@ -127,3 +127,8 @@ Grep file filename
    > . -d represents delete flag
    
    
+### Regex in bash 
+
+Match all words starting with non-vowel and end with a vowel
+
+  >  cat filename | grep "^[^aeiou].*[aeiou]" 
