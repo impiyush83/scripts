@@ -145,4 +145,39 @@ Match all words starting with non-vowel and end with a vowel
     '{m}' - Matches the exactly regex ‘m’
     '{m,}' - Matches the at least regex ‘m’
     '{m,n}' - Matches the preceding regex ‘m’ to ‘n’ times
+    
+    '[:alnum:]' - Alphanumeric characters; same as [a-zA-Z0-9]
+    '[:digit:]' - Digits; same as [0-9]
+    '[:punct:]' - Punctuation characters
 
+### Sed - Stream Editor
+
+     Sed is a powerful text stream editor which can do insertion, deletion, search and replace.
+     
+   #### Examples
+   
+   
+     Input:  
+     cat
+     caat
+     caaat
+     caaaat
+     caaaaat
+
+   > sed 's/a\{2,\}/a/g' input
+   > s is substitution
+   > 2nd parameter is string to be replaced
+   > 3rd parameter is by whom string is to be replaced
+   > 4th parameter decides the occurences. 
+   > Here, g represents global or all occurences. It can be replaced by 1,2,etc. 3g means from 3rd occurence to last. 
+   
+   
+   > sed '3 s/a\{2,\}/a/g' input
+   > Here ONLY 3rd line gets modified
+   
+   
+   > sed 's/a\{2,\}/a/p' input
+   > prints only modified lines 
+   
+   
+   
