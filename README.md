@@ -132,3 +132,17 @@ Grep file filename
 Match all words starting with non-vowel and end with a vowel
 
   >  cat filename | grep "^[^aeiou].*[aeiou]" 
+  
+  
+ Regex important concepts :
+ 
+    '.' (dot) - Matches any single character except the newline character (\n).
+    '*' (star) - Matches zero or more occurrence of the immediately preceding character.
+    '<' - Matches the beginning of a word
+    '>' - Matches the ending of a word
+    '^' - Matches the beginning of a line
+    '$' - Matches the end of a line  
+    '{m}' - Matches the exactly regex ‘m’
+    '{m,}' - Matches the at least regex ‘m’
+    '{m,n}' - Matches the preceding regex ‘m’ to ‘n’ times
+
