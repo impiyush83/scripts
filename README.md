@@ -71,3 +71,59 @@ Grep file filename
  
  > Fucntion: Print file name of standard input's terminal
  
+ ### Piping 
+ 
+ > A pipe is a form of redirection that is used in Linux and other Unix-like operating systems to send the output of one program to another program for further processing
+ 
+ 
+ ### Sort 
+ 
+ > cat words.txt | sort -k 2 
+ > -k select the field upon which the sorting to be implemented 
+ 
+ ### Uniq
+ 
+ Filter out repeated lines 
+ 
+ > cat nums.txt | uniq
+ 
+    Input 
+    
+    1
+    2
+    2
+    3
+    3
+    3
+ 
+ >   Applying command to above input 
+ >   cat input.txt | uniq -c
+ >  -c represents count of each element mae unique
+ 
+    Output 
+    
+    1 1
+    2 2 
+    3 3  
+   
+   ### Head, tail and tr
+   
+   Get lines from 345 to 360
+   
+   > cat words.txt | head -360 | tail -15
+   
+   Replace the charaters 
+   
+   > cat data.csv | tr '[a-z][A-Z]' '[A-Z][a-z]'
+   > Replaces the [a-z][A-Z] by [A-Z][a-z] repectively
+ 
+   Replacing numbers with x 
+   
+   > cat data.csv | tr '[0-9]' 'x'
+   
+   Remove all the digits 
+   
+   > cat data.csv | tr -d '[0-9]'
+   > . -d represents delete flag
+   
+   
