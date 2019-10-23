@@ -6,15 +6,14 @@ This repo is a collection of scripts.
 
 This is used to remove all the packages installed on root directory / the machine rather than installing it in virtualenv.
 
- >  pip3 freeze --local | xargs pip3 uninstall -y
+    pip3 freeze --local | xargs pip3 uninstall -y
  
 ### Cut command
  
  Suppose there is a file data.csv and you want to take out characters 1 to 5 
  
- > cat data.csv | cut -c 1-5
- >
- > -c means column
+    cat data.csv | cut -c 1-5
+    -c means column
  
  
  
@@ -33,43 +32,43 @@ This is used to remove all the packages installed on root directory / the machin
 
  Suppose there is a file and we need to read contents of a file 
  
- > cat file.txt
- > cat file1.txt file2.txt
- > This is used to show  multiple files 
+    cat file.txt
+    cat file1.txt file2.txt
+    This is used to show  multiple files 
 
 
  Copy contents of file1 to file2
  
- > cat file1.txt > file2.txt
+    cat file1.txt > file2.txt
  
  Appemnd contents of file1 to file2
  
- > cat file1.txt >> file2.txt
+    cat file1.txt >> file2.txt
  
  ### SHEBANG CONSTRUCT 
  
- > #!/bin/sh
- > This is used to tell the system that this is a shell script
+    #!/bin/sh
+    This is used to tell the system that this is a shell script
  
  ### Grep command 
  
  Match all words starting with Ind
  
- > cat words.txt | grep "Ind.*"
+    cat words.txt | grep "Ind.*"
 
 Match all words ending with age
 
- > cat words.txt | grep ".*age$"
+    cat words.txt | grep ".*age$"
  
 Grep file filename
 
- > grep -HRi 'json' *
- > -R  is recursive, -H is filename, -i is case-insensitive
+    grep -HRi 'json' *
+    -R  is recursive, -H is filename, -i is case-insensitive
 
  
  ### tty
  
- > Fucntion: Print file name of standard input's terminal
+    Fucntion: Print file name of standard input's terminal
  
  ### Piping 
  
@@ -164,21 +163,21 @@ Match all words starting with non-vowel and end with a vowel
      caaaat
      caaaaat
 
-   > sed 's/a\{2,\}/a/g' input
-   > s is substitution
-   > 2nd parameter is string to be replaced
-   > 3rd parameter is by whom string is to be replaced
-   > 4th parameter decides the occurences. 
-   > Here, g represents global or all occurences. It can be replaced by 1,2,etc. 3g means from 3rd occurence to last. 
+     sed 's/a\{2,\}/a/g' input
+     s is substitution
+     2nd parameter is string to be replaced
+     3rd parameter is by whom string is to be replaced
+     4th parameter decides the occurences. 
+     Here, g represents global or all occurences. It can be replaced by 1,2,etc. 3g means from 3rd occurence to last. 
    
    
-   > sed '3 s/a\{2,\}/a/g' input
-   > Here ONLY 3rd line gets modified
+     sed '3 s/a\{2,\}/a/g' input
+     Here ONLY 3rd line gets modified
    
    
-   > sed 's/a\{2,\}/a/p' input
-   > prints only modified lines 
-   
+     sed 's/a\{2,\}/a/p' input
+     prints only modified lines 
+  
    
    ### Git 
    
