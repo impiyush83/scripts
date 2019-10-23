@@ -181,6 +181,8 @@ Match all words starting with non-vowel and end with a vowel
    
    ### Git 
    
+   Git Squash
+   
      git rebase -i HEAD~2
      
      pick 2d603a2 chore: practicing git .   - oldest commit 
