@@ -180,4 +180,17 @@ Match all words starting with non-vowel and end with a vowel
    > prints only modified lines 
    
    
+   ### Git 
    
+     git rebase -i HEAD~2
+     
+     pick 2d603a2 chore: practicing git .   - oldest commit 
+     pick 5e4eae4 Squash test .   - latest commit
+
+     pick 2d603a2 chore: practicing git .   - oldest commit 
+     sqash 5e4eae4 Squash test .   - latest commit
+     
+     Change last N-1 commits to squash 
+     
+     This is used to squash last N commits into 1 commit 
+ 
