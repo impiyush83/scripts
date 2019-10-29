@@ -194,4 +194,7 @@ Match all words starting with non-vowel and end with a vowel
      Change last N-1 commits to squash 
      
      This is used to squash last N commits into 1 commit 
+  
+ ### Remove all pycache files
  
+    find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
