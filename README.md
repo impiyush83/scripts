@@ -198,3 +198,8 @@ Match all words starting with non-vowel and end with a vowel
  ### Remove all pycache files
  
     find . | grep -E "(__pycache__|\.pyc|\.pyo$)" | xargs rm -rf
+    
+ ### Revert remote branch to previous commit 
+ 
+     git reset --hard <commit-hash>
+     git push -f origin master
